@@ -1,0 +1,238 @@
+{
+  "jobs": [
+    {
+      "enable": true,
+      "timespec": "0 5 0 * * *",
+      "calls": [
+        {
+          "method": "Script.Start",
+          "params": {
+            "id": 1
+          }
+        }
+      ]
+    },
+    {
+      "enable": true,
+      "timespec": "0 10 0 1 * *",
+      "calls": [
+        {
+          "method": "Script.Start",
+          "params": {
+            "id": 2
+          }
+        }
+      ]
+    },
+    {
+      "enable": true,
+      "timespec": "0 15 0 1 * *",
+      "calls": [
+        {
+          "method": "Script.Start",
+          "params": {
+            "id": 3
+          }
+        }
+      ]
+    },   
+    {
+      "enable": true,
+      "timespec": "0 45 7 * 1,2,12 1-5",
+      "calls": [
+        {
+          "method": "Switch.Set",
+          "params": {
+            "id": 0,
+            "on": true
+          }
+        }
+      ]
+    },
+    {
+      "enable": true,
+      "timespec": "0 0 8 * 1,2,12 1-5",
+      "calls": [
+        {
+          "method": "Switch.Set",
+          "params": {
+            "id": 0,
+            "on": false
+          }
+        },
+        {
+          "method": "Switch.Set",
+          "params": {
+            "id": 1,
+            "on": true
+          }
+        }
+      ]
+    },
+    {
+      "enable": true,
+      "timespec": "0 15 12 * 1,2,12 1-5",
+      "calls": [
+        {
+          "method": "Switch.Set",
+          "params": {
+            "id": 1,
+            "on": false
+          }
+        },
+        {
+          "method": "Switch.Set",
+          "params": {
+            "id": 0,
+            "on": true
+          }
+        }
+      ]
+    },
+    {
+      "enable": true,
+      "timespec": "0 30 12 * 1,2,12 1-5",
+      "calls": [
+        {
+          "method": "Switch.Set",
+          "params": {
+            "id": 0,
+            "on": false
+          }
+        }
+      ]
+    },
+        {
+      "enable": true,
+      "timespec": "0 30 16 * 1,2,12 1-5",
+      "calls": [
+        {
+          "method": "Switch.Set",
+          "params": {
+            "id": 0,
+            "on": true
+          }
+        }
+      ]
+    },
+    {
+      "enable": true,
+      "timespec": "0 45 16 * 1,2,12 1-5",
+      "calls": [
+        {
+          "method": "Switch.Set",
+          "params": {
+            "id": 0,
+            "on": false
+          }
+        },
+        {
+          "method": "Switch.Set",
+          "params": {
+            "id": 1,
+            "on": true
+          }
+        }
+      ]
+    },
+    {
+      "enable": true,
+      "timespec": "0 15 19 * 1,2,12 1-5",
+      "calls": [
+        {
+          "method": "Switch.Set",
+          "params": {
+            "id": 1,
+            "on": false
+          }
+        },
+        {
+          "method": "Switch.Set",
+          "params": {
+            "id": 0,
+            "on": true
+          }
+        }
+      ]
+    },
+    {
+      "enable": true,
+      "timespec": "0 30 19 * 1,2,12 1-5",
+      "calls": [
+        {
+          "method": "Switch.Set",
+          "params": {
+            "id": 0,
+            "on": false
+          }
+        }
+      ]
+    },
+    {
+      "enable": true,
+      "timespec": "0 15 16 * 9-11 1-5",
+      "calls": [
+        {
+          "method": "Switch.Set",
+          "params": {
+            "id": 0,
+            "on": true
+          }
+        }
+      ]
+    },
+    {
+      "enable": true,
+      "timespec": "0 30 16 * 9-11 1-5",
+      "calls": [
+        {
+          "method": "Switch.Set",
+          "params": {
+            "id": 0,
+            "on": false
+          }
+        },
+        {
+          "method": "Switch.Set",
+          "params": {
+            "id": 1,
+            "on": true
+          }
+        }
+      ]
+    },
+    {
+      "enable": true,
+      "timespec": "0 15 19 * 9-11 1-5",
+      "calls": [
+        {
+          "method": "Switch.Set",
+          "params": {
+            "id": 1,
+            "on": false
+          }
+        },
+        {
+          "method": "Switch.Set",
+          "params": {
+            "id": 0,
+            "on": true
+          }
+        }
+      ]
+    },
+    {
+      "enable": true,
+      "timespec": "0 30 19 * 9-11 1-5",
+      "calls": [
+        {
+          "method": "Switch.Set",
+          "params": {
+            "id": 0,
+            "on": false
+          }
+        }
+      ]
+    }
+  ]
+}
